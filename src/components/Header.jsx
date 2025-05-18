@@ -1,9 +1,13 @@
 import { NavLink } from "react-router-dom";
+import styles from "./Header.module.css";
 
 function Header() {
+
+console.log(styles);
+
   return (
     <>
-      <h1>Header</h1>
+      <h1 className={styles.dima}>Header</h1>
       {/* <a href="http://localhost:5173/about">about</a> */}
       <NavLink to={"/"}>Home</NavLink>
       <NavLink to={"/about"}>About</NavLink>
